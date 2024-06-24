@@ -3,7 +3,7 @@ import torch.nn as nn
 
 class FieldComputation:
     '''
-    This class constructs the displacement and phase fields by baking in the
+    This class constructs the displacement and phase fields from the NN outputs by baking in the
     Dirichlet boundary conditions (BCs) and other constraints.
 
     net: neural network
