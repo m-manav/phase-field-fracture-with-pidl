@@ -15,7 +15,12 @@ class FieldComputation:
     lmbda: prescribed displacement
     theta: Angle of the direction of loading from the x-axis (not used in all problems)
     alpha_ansatz: type of function to constrain alpha in {'smooth', 'nonsmooth'}
-    DistanceFunction: using this object, distance function to apply a BC can be created as needed
+    
+    DistanceFunction: using this object, distance function associated with a specified line
+    to apply a BC can be constructed.
+    (x_init, y_init): start of the line; theta: orientation of the line from the x-axis;
+    L: length of the line; d0: support of the distance function;
+    order: order of the polynomial to be used in the construction of the distance function
 
     fieldCalculation: applies BCs amd constraint on alpha (needs to be customized for each problem)
 
